@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:background="@drawable/circular_bead_white_10px"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="正在下载.."
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <SeekBar
+            android:id="@+id/mProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:progressDrawable="@drawable/progressbar"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="#06a7ff"
+            android:progress="1">
+        </SeekBar>
+
+    </RelativeLayout>
+</LinearLayout>
