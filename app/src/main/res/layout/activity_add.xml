@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/beijing1"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddActivity">
+    <EditText
+        android:id="@+id/findEt"
+        android:hint="请输入城市名"
+        android:background="@drawable/frag_bg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></EditText>
+    <ImageView
+        android:id="@+id/findTv"
+        android:src="@mipmap/find"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"></ImageView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cityRv"
+        android:padding="10dp"
+        android:layout_below="@id/findEt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
